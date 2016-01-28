@@ -4,9 +4,17 @@
 
   1. Understand the landscape of gems that can be used to do authorization and authentication in Rails.
 
+## Authentication vs Authorization
+
+Two concepts that are related, oft confused, but important to distinguish are authentication and authorization.
+
+*Authentication* is determining who someone is. When I take money out of an ATM, the bank authenticates me with using two authentication factors: my PIN, and the secret key stored on the chip in my ATM card. Before I get on a plane, the TSA (the airline security organization in the U.S.) authenticates me by asking for my ID and using the extremely advanced facial recognition hardware embedded in human brains to verify that the ID matches my face. Usernames and passwords and credentials are all authentication things.
+
+*Authorization* is determining if someone can do a particular thing. The bouncer at the club authenticates me by looking at my ID, and then authorizes me to enter by looking at the list (though I am more typically asked to leave the premises).
+
 ## Authentication
 
-In the first half of this unit we learned how to roll our own authentication scheme.  Authentication deals with verifying WHO a user is.  In the second half of this unit we're also going to learn how to do authorization.  Authorization deals with WHAT a user is allowed to do once we know WHO they are.  
+In the first half of this unit we learned how to roll our own authentication scheme.
 
 Most security professionals will tell you NEVER to roll your own authentication logic as we did in the first half of the unit.  This is because as a young (or even experienced programmer) it's unlikely you are a match for the myriad of tricks hackers are going to use to try and hack into your site.  Forget to salt your passwords?  You're open to rainbow table attacks.  Use the wrong hashing algorithm?  You're open to brute force attacks.  Leave security to those who are experts at it!
 
@@ -19,6 +27,12 @@ One of the gems everybody loves almost as much as they hate it is Devise.  It's 
 Other gems worth looking at in this space are [Warden](https://github.com/hassox/warden) (which devise is based around) and [Authlogic](https://github.com/binarylogic/authlogic)
 
 ## Authorization
+
+Hey, can I delete this file?
+
+It's a surprisingly loaded question. Did I create the file? Do I own it? What does it mean to own a file? Can I write to the file? If I can write to a thing, can I delete it?
+
+These are questions of authorization.
 
 Authorization deals with WHAT a user is allowed to do, once we know WHO that user is.  Can this particular user delete a post?  Can they view posts written by other users?  Authorization helps you answer these questions.
 
