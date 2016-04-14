@@ -6,7 +6,7 @@
 
 ## Authentication vs Authorization
 
-Two concepts that are related, oft confused, but important to distinguish are authentication and authorization.
+Two concepts that are related, often confused, but important to distinguish are authentication and authorization.
 
 *Authentication* is determining who someone is. When I take money out of an ATM, the bank authenticates me with using two authentication factors: my PIN, and the secret key stored on the chip in my ATM card. Before I get on a plane, the TSA (the airline security organization in the U.S.) authenticates me by asking for my ID and using the extremely advanced facial recognition hardware embedded in human brains to verify that the ID matches my face. Usernames and passwords and credentials are all authentication things.
 
@@ -40,3 +40,4 @@ Although Devise doesn't have out of the box support for authorization, it's comm
 
 You can pair the concept of roles with other gems that allow you to specify what "abilities" or "policies" users or types of users.  For example we could say that admins have the "ability" to read, write and delete any post.
 [CanCanCan](https://github.com/CanCanCommunity/cancancan) and [Pundit](https://github.com/elabs/pundit) are the leaders in this space.  The original gem CanCan (what can? a user do) was written by the creator of RailsCasts if you are a fan!
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/authentication_and_authorization_with_gems'>Authentication And Authorization With Gems</a> on Learn.co and start learning to code for free.</p>
