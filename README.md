@@ -18,7 +18,7 @@ In the first half of this unit we learned how to roll our own authentication sch
 
 Most security professionals will tell you NEVER to roll your own authentication logic as we did in the first half of the unit.  This is because as a young (or even experienced programmer) it's unlikely you are a match for the myriad of tricks hackers are going to use to try and hack into your site.  Forget to salt your passwords?  You're open to rainbow table attacks.  Use the wrong hashing algorithm?  You're open to brute force attacks.  Leave security to those who are experts at it!
 
-There are two solutions to this problem.  One, which we've already learned is letting someone else take care of logging users in!  Rather than devoting your scare resources to solving a solved problem, user the omniauth gem and let one of the internet giants like Facebook deal with authentication by leveraging the oauth protocol.  If Facebook gets hacked, you probably wouldn't have been safer implementing your own authentication scheme...
+There are two solutions to this problem.  One, which we've already learned is letting someone else take care of logging users in!  Rather than devoting your scarce resources to solving a solved problem, use the omniauth gem and let one of the internet giants like Facebook deal with authentication by leveraging the oauth protocol.  If Facebook gets hacked, you probably wouldn't have been safer implementing your own authentication scheme...
 
 Along the same lines as this solution, is leveraging the Rails communities open source nature and using a battle tested gem to implement authentication.  In the same way using the omniauth gem can help you avoid implementing the oauth specification correctly yourself, there are a host of gems the Rails community has built over the years to help you avoid implementing authentication and authorization yourself.
 
@@ -40,3 +40,4 @@ Although Devise doesn't have out of the box support for authorization, it's comm
 
 You can pair the concept of roles with other gems that allow you to specify what "abilities" or "policies" users or types of users.  For example we could say that admins have the "ability" to read, write and delete any post.
 [CanCanCan](https://github.com/CanCanCommunity/cancancan) and [Pundit](https://github.com/elabs/pundit) are the leaders in this space.  The original gem CanCan (what can? a user do) was written by the creator of RailsCasts if you are a fan!
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/authentication_and_authorization_with_gems'>Authentication And Authorization With Gems</a> on Learn.co and start learning to code for free.</p>
