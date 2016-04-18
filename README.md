@@ -6,7 +6,7 @@
 
 ## Authentication vs Authorization
 
-Two concepts that are related, oft confused, but important to distinguish are authentication and authorization.
+Two concepts that are related, often confused, but important to distinguish are authentication and authorization.
 
 *Authentication* is determining who someone is. When I take money out of an ATM, the bank authenticates me with using two authentication factors: my PIN, and the secret key stored on the chip in my ATM card. Before I get on a plane, the TSA (the airline security organization in the U.S.) authenticates me by asking for my ID and using the extremely advanced facial recognition hardware embedded in human brains to verify that the ID matches my face. Usernames and passwords and credentials are all authentication things.
 
