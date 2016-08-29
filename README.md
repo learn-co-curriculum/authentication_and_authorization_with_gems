@@ -38,6 +38,8 @@ Authorization deals with WHAT a user is allowed to do, once we know WHO that use
 
 Although Devise doesn't have out of the box support for authorization, it's common to implement "roles" using Devise.  Roles allow us to segment our users into types or kinds of users.  For example, admins, teachers, and students.  By leveraging ActiveRecord's enum feature, you can define a user as having a specific role.  If you have simple enough authorization requirements this might be enough.  However, if your roles get more complicated you might want to bring in another gem to do the heavy lifting [Rolify](https://github.com/RolifyCommunity/rolify).
 
-You can pair the concept of roles with other gems that allow you to specify what "abilities" or "policies" users or types of users.  For example we could say that admins have the "ability" to read, write and delete any post.
+You can pair the concept of roles with other gems that allow you to specify what "abilities" or "policies" users or types of users.  For example, we could say that admins have the "ability" to read, write and delete any post.
 [CanCanCan](https://github.com/CanCanCommunity/cancancan) and [Pundit](https://github.com/elabs/pundit) are the leaders in this space.  The original gem CanCan (what can? a user do) was written by the creator of RailsCasts if you are a fan!
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/authentication_and_authorization_with_gems'>Authentication And Authorization With Gems</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/authentication_and_authorization_with_gems'>Authentication And Authorization With Gems</a> on Learn.co and start learning to code for free.</p>
