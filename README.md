@@ -42,4 +42,3 @@ You can pair the concept of roles with other gems that allow you to specify whic
 
 [CanCanCan](https://github.com/CanCanCommunity/cancancan) and [Pundit](https://github.com/elabs/pundit) are the leaders in this space. If you are a fan of RailsCasts, the original CanCan gem (so-named to answer the question: what *can* a user do?) was written by the series's creator!
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/authentication_and_authorization_with_gems' title='Authentication and Authorization with Gems'>Authentication and Authorization with Gems</a> on Learn.co and start learning to code for free.</p>
